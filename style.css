@@ -1,4 +1,11 @@
 @font-face {
+    font-family: 'Carybe';
+    src: url("./Resources/Libraries/Fonts/carybe/Carybe.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Ubuntu-Bold';
     src: url("./Resources/Libraries/Fonts/Ubuntu/Ubuntu-Bold.ttf");
     font-weight: bold;
@@ -22,10 +29,67 @@ body {
 
 main {
     background: lightgrey;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1000px;
+    margin: 0 auto;
 }
 
-h1, h2, h3 {
+header {
+    border-bottom: 1px solid black;
+    height: 90px;
+}
+
+h1 {
+    font-family: Carybe, sans-serif;
+    float: left;
+    margin-left: 15px;
+}
+
+nav {
+    float: right;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+h2, h3 {
     font-family: Ubuntu-Bold, sans-serif;
+}
+
+section {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer {
+    border-top: 1px solid black;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer ul li {
+    display: block;
+}
+
+footer ul li strong {
+    float: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+footer ul li a {
+    float: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
