@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: 'Ubuntu-BoldItaltic';
+    src: url("./Resources/Libraries/Fonts/Ubuntu/Ubuntu-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
     font-family: 'Ubuntu-Regular';
     src: url("./Resources/Libraries/Fonts/Ubuntu/Ubuntu-Regular.ttf");
     font-weight: normal;
@@ -63,6 +70,11 @@ h2, h3 {
 section {
     padding-left: 10px;
     padding-right: 10px;
+    text-align: center;
+}
+
+blockquote {
+    font-family: Ubuntu-BoldItaltic, sans-serif;
 }
 
 footer {
