@@ -10,7 +10,7 @@ var showReviews = (function() {
 
         $("#reviews").append("<h3>" + customerReviews[index].title + "</h3>");
         $("#reviews").append("<p>" + customerReviews[index].author + "</p>");
-        $("#reviews").append("<p>" + customerReviews[index].reviewcontent + "</p>");
+        $("#reviews").append('<blockquote>"' + customerReviews[index].reviewcontent + '"</blockquote>');
         index++;
 
         if (index === customerReviews.length) {
@@ -29,6 +29,10 @@ var showReviews = (function() {
                 index = 0;
                 displayReview();
                 setInterval(displayReview, 7000);
+            },
+
+            error: function() {
+                $("#reviews").html("Sorry, something has gone wrong on our end.");
             }
         });
     }

@@ -67,10 +67,18 @@ h2, h3 {
     font-family: Ubuntu-Bold, sans-serif;
 }
 
+#reviews {
+    padding-bottom: 10px;
+}
+
 section {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
+}
+
+#map {
+    height: 500px;
 }
 
 blockquote {

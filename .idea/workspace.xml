@@ -10,9 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Added a new font for logo and added some css to style the website">
+    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Added some Javascript to read the reviews.json file and display it on the webpage">
+      <change afterPath="$PROJECT_DIR$/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/book.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locations.html" beforeDir="false" afterPath="$PROJECT_DIR$/locations.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/showReviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/showReviews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -65,7 +69,7 @@
       <workItem from="1597482051510" duration="422000" />
       <workItem from="1597533471894" duration="3905000" />
       <workItem from="1597552782311" duration="5002000" />
-      <workItem from="1597565377312" duration="3418000" />
+      <workItem from="1597565377312" duration="9386000" />
     </task>
     <task id="LOCAL-00001" summary="Added resource files to git repository">
       <created>1597482241144</created>
@@ -88,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597557821345</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added some Javascript to read the reviews.json file and display it on the webpage">
+      <created>1597569006829</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597569006829</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,12 +121,13 @@
     <MESSAGE value="Added resource files to git repository" />
     <MESSAGE value="Created some html pages as the basic template for the website" />
     <MESSAGE value="Added a new font for logo and added some css to style the website" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a new font for logo and added some css to style the website" />
+    <MESSAGE value="Added some Javascript to read the reviews.json file and display it on the webpage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some Javascript to read the reviews.json file and display it on the webpage" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597557834605">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597569019585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597557834605" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597569019585" />
   </component>
 </project>
