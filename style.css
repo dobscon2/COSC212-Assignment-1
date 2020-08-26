@@ -77,6 +77,14 @@ section {
     text-align: center;
 }
 
+#bookings {
+    border-collapse: collapse;
+}
+
+#bookings, th, td {
+    border: 1px solid black;
+}
+
 #map {
     height: 500px;
 }
