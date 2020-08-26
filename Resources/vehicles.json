@@ -37,7 +37,7 @@
 				"description": "A basic family car, seats 5.",
 				"pricePerDay": "65"
 			},
-			
+
 			{
 				"registration": "MJN 842",
 				"vehicleType": "Medium",
@@ -79,8 +79,8 @@
 				"vehicleType": "Luxury",
 				"description": "Top of the range luxury sedan",
 				"pricePerDay": "125"
-			},
-		
+			}
+
 		]
 	}
 }
