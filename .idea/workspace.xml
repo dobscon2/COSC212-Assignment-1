@@ -10,11 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Updating resource json files">
-      <change afterPath="$PROJECT_DIR$/bookings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Working on admin booking table">
+      <change beforePath="$PROJECT_DIR$/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +63,7 @@
       <workItem from="1597533471894" duration="3905000" />
       <workItem from="1597552782311" duration="5002000" />
       <workItem from="1597565377312" duration="9386000" />
-      <workItem from="1598431068396" duration="3348000" />
+      <workItem from="1598431068396" duration="3650000" />
     </task>
     <task id="LOCAL-00001" summary="Added resource files to git repository">
       <created>1597482241144</created>
@@ -103,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598432626026</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Working on admin booking table">
+      <created>1598435784062</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598435784062</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,12 +131,13 @@
     <MESSAGE value="Added a new font for logo and added some css to style the website" />
     <MESSAGE value="Added some Javascript to read the reviews.json file and display it on the webpage" />
     <MESSAGE value="Updating resource json files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating resource json files" />
+    <MESSAGE value="Working on admin booking table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on admin booking table" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598432662177">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598435795840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598432662177" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598435795840" />
   </component>
 </project>

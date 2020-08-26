@@ -13,13 +13,15 @@ var map = (function () {
                 mapData = data;
                 console.log(mapData);
 
-                map = L.map('map').setView([-45.875, 170.500], 14);
+                map = L.map('map').setView([-45.910, 170.495], 14);
 
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     maxZoom: 18,
                     attribution: 'Map data &copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
                         '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, '
                 }).addTo(map);
+
+                L.geoJSON(data).addTo(map);
 
             },
 
