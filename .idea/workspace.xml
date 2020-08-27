@@ -10,9 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="I've started working on the javascript for creating a booking">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/map.js" afterDir="false" />
+    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Got popup information working from geoJSON file">
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
       <workItem from="1598431068396" duration="3650000" />
       <workItem from="1598487970277" duration="1093000" />
       <workItem from="1598491132195" duration="1758000" />
-      <workItem from="1598499189827" duration="2595000" />
+      <workItem from="1598499189827" duration="2906000" />
     </task>
     <task id="LOCAL-00001" summary="Added resource files to git repository">
       <created>1597482241144</created>
@@ -139,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598500687792</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Got popup information working from geoJSON file">
+      <created>1598502320167</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1598502320167</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,12 +173,13 @@
     <MESSAGE value="I have added the &quot;magic&quot; file for GitLab pages" />
     <MESSAGE value="I have added the &quot;magic&quot; file for GitLab pages again" />
     <MESSAGE value="I've started working on the javascript for creating a booking" />
-    <option name="LAST_COMMIT_MESSAGE" value="I've started working on the javascript for creating a booking" />
+    <MESSAGE value="Got popup information working from geoJSON file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got popup information working from geoJSON file" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598500700651">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598502339087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598500700651" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598502339087" />
   </component>
 </project>
