@@ -10,10 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="I have added the &quot;magic&quot; file for GitLab pages again">
-      <change afterPath="$PROJECT_DIR$/book.js" afterDir="false" />
+    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="I've started working on the javascript for creating a booking">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
       <workItem from="1598431068396" duration="3650000" />
       <workItem from="1598487970277" duration="1093000" />
       <workItem from="1598491132195" duration="1758000" />
-      <workItem from="1598499189827" duration="1271000" />
+      <workItem from="1598499189827" duration="2595000" />
     </task>
     <task id="LOCAL-00001" summary="Added resource files to git repository">
       <created>1597482241144</created>
@@ -133,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598493373187</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="I've started working on the javascript for creating a booking">
+      <created>1598500687792</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598500687792</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,12 +166,13 @@
     <MESSAGE value="Working on admin booking table" />
     <MESSAGE value="I have added the &quot;magic&quot; file for GitLab pages" />
     <MESSAGE value="I have added the &quot;magic&quot; file for GitLab pages again" />
-    <option name="LAST_COMMIT_MESSAGE" value="I have added the &quot;magic&quot; file for GitLab pages again" />
+    <MESSAGE value="I've started working on the javascript for creating a booking" />
+    <option name="LAST_COMMIT_MESSAGE" value="I've started working on the javascript for creating a booking" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598493403140">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598500700651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598493403140" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598500700651" />
   </component>
 </project>
