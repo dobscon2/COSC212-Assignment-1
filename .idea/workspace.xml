@@ -10,8 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Working on admin booking table">
-      <change afterPath="$PROJECT_DIR$/gitlab-ci.yml" afterDir="false" />
+    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="I have added the &quot;magic&quot; file for GitLab pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +65,7 @@
       <workItem from="1597565377312" duration="9386000" />
       <workItem from="1598431068396" duration="3650000" />
       <workItem from="1598487970277" duration="1093000" />
-      <workItem from="1598491132195" duration="619000" />
+      <workItem from="1598491132195" duration="1446000" />
     </task>
     <task id="LOCAL-00001" summary="Added resource files to git repository">
       <created>1597482241144</created>
@@ -110,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598435784062</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="I have added the &quot;magic&quot; file for GitLab pages">
+      <created>1598491966006</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598491966006</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,12 +141,13 @@
     <MESSAGE value="Added some Javascript to read the reviews.json file and display it on the webpage" />
     <MESSAGE value="Updating resource json files" />
     <MESSAGE value="Working on admin booking table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on admin booking table" />
+    <MESSAGE value="I have added the &quot;magic&quot; file for GitLab pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have added the &quot;magic&quot; file for GitLab pages" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598435795840">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598491979037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598435795840" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598491979037" />
   </component>
 </project>
