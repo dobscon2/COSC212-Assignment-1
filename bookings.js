@@ -18,6 +18,20 @@ var bookings = (function() {
             cell.outerHTML = "<th>" + keys[i] + "</th>";
         }
 
+        var numberCell, nameCell, pickupCell, dropoffCell;
+        for (i = 0; i < bookings.length; i++) {
+            row = table.insertRow(1);
+            numberCell = row.insertCell(0);
+            nameCell = row.insertCell(1);
+            pickupCell = row.insertCell(2);
+            dropoffCell = row.insertCell(3);
+
+            numberCell.innerHTML = bookings[i].number;
+            nameCell.innerHTML = bookings[i].name;
+            pickupCell.innerHTML = bookings[i].pickup.day + "/" + bookings[i].pickup.month + "/" + bookings[i].pickup.year;
+            dropoffCell.innerHTML = bookings[i].dropoff.day + "/" + bookings[i].dropoff.month + "/" + bookings[i].dropoff.year;
+        }
+
     }
 
     pub.setup = function() {

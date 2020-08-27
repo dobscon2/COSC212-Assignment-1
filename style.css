@@ -79,6 +79,7 @@ section {
 
 #bookings {
     border-collapse: collapse;
+    width: 100%;
 }
 
 #bookings, th, td {
