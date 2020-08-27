@@ -11,9 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Working on admin booking table">
+      <change afterPath="$PROJECT_DIR$/gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookings.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +66,7 @@
       <workItem from="1597565377312" duration="9386000" />
       <workItem from="1598431068396" duration="3650000" />
       <workItem from="1598487970277" duration="1093000" />
+      <workItem from="1598491132195" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="Added resource files to git repository">
       <created>1597482241144</created>
