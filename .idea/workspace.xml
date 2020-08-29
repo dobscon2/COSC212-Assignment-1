@@ -10,9 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Testing out adding new locations to the POI.geoJSON file. I have added the railway station">
-      <change beforePath="$PROJECT_DIR$/Resources/POI.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/POI.geojson" afterDir="false" />
-    </list>
+    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Added some more restaurants and landmarks to the POI.geoJSON file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +67,7 @@
       <workItem from="1598491132195" duration="1758000" />
       <workItem from="1598499189827" duration="2906000" />
       <workItem from="1598658278327" duration="2907000" />
-      <workItem from="1598668432084" duration="10594000" />
+      <workItem from="1598668432084" duration="11379000" />
     </task>
     <task id="LOCAL-00001" summary="Added resource files to git repository">
       <created>1597482241144</created>
@@ -183,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598678752195</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added some more restaurants and landmarks to the POI.geoJSON file">
+      <created>1598679842131</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1598679842131</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,12 +222,13 @@
     <MESSAGE value="The displayChoices() function now displays the correct vehicles from the user's choice from the vehicles.json file" />
     <MESSAGE value="Added a back button in the createBooking div that lets the user go back to the choice size screen" />
     <MESSAGE value="Testing out adding new locations to the POI.geoJSON file. I have added the railway station" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing out adding new locations to the POI.geoJSON file. I have added the railway station" />
+    <MESSAGE value="Added some more restaurants and landmarks to the POI.geoJSON file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some more restaurants and landmarks to the POI.geoJSON file" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598678763262">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598679852394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598678763262" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598679852394" />
   </component>
 </project>
