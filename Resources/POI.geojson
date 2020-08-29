@@ -53,21 +53,38 @@
       }
     },
     {
-          "type": "Feature",
-          "properties": {
-            "marker-color": "#7e7e7e",
-            "marker-size": "medium",
-            "marker-symbol": "",
-            "type": "restaurant",
-            "name": "Esplanade"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              170.49030303955075,
-              -45.911675131971606
-            ]
-          }
-        }
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "type": "restaurant",
+        "name": "Esplanade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.49030303955075,
+          -45.911675131971606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Dunedin Railway Station",
+        "type": "landmark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.50895512104032,
+          -45.875299553642236
+        ]
+      }
+    }
   ]
 }
