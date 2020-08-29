@@ -10,7 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Added some more restaurants and landmarks to the POI.geoJSON file" />
+    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Added the remaining images to git repository">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/HXB 852.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/HXB 852.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +74,7 @@
       <workItem from="1598658278327" duration="2907000" />
       <workItem from="1598668432084" duration="11379000" />
       <workItem from="1598686370632" duration="650000" />
-      <workItem from="1598690408522" duration="644000" />
+      <workItem from="1598690408522" duration="3923000" />
     </task>
     <task id="LOCAL-00001" summary="Added resource files to git repository">
       <created>1597482241144</created>
@@ -190,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598679842131</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added the remaining images to git repository">
+      <created>1598693348086</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1598693348086</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,12 +237,13 @@
     <MESSAGE value="Added a back button in the createBooking div that lets the user go back to the choice size screen" />
     <MESSAGE value="Testing out adding new locations to the POI.geoJSON file. I have added the railway station" />
     <MESSAGE value="Added some more restaurants and landmarks to the POI.geoJSON file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some more restaurants and landmarks to the POI.geoJSON file" />
+    <MESSAGE value="Added the remaining images to git repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the remaining images to git repository" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598679852394">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598693362680">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598679852394" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598693362680" />
   </component>
 </project>

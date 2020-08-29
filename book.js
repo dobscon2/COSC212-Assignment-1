@@ -45,11 +45,16 @@ var book = (function() {
 
         $(vehicles.fleet.vehicle).each(function() {
             if (this.vehicleType === size) {
+                var imageURL = "images/" + this.registration + ".jpg";
+                console.log(imageURL);
                 $("#createBooking").append("<div class ='vehicleItem'>" +
-                    "<p>Registration: " + this.registration + "</p>" +
-                    "<p>Vehicle Type: " + this.vehicleType + "</p>" +
-                    "<p>Vehicle Description: " + this.description + "</p>" +
-                    "<p>Vehicle Price per Day: $" + this.pricePerDay + "</p>" +
+                    "<ul>" +
+                    "<li>Registration: " + this.registration + "</li>" +
+                    "<li>Vehicle Type: " + this.vehicleType + "</li>" +
+                    "<li>Vehicle Description: " + this.description + "</li>" +
+                    "<li>Vehicle Price per Day: $" + this.pricePerDay + "</li>" +
+                    "</ul>" +
+                    "<img src='" + imageURL + "' alt='car picture'>" +
                     "</div>" +
                     "<hr>");
             }
