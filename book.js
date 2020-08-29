@@ -55,6 +55,7 @@ var book = (function() {
                     "<li>Vehicle Price per Day: $" + this.pricePerDay + "</li>" +
                     "</ul>" +
                     "<img src='" + imageURL + "' alt='car picture'>" +
+                    "<button type='button'>Book this car</button>" +
                     "</div>" +
                     "<hr>");
             }

@@ -10,10 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Added the remaining images to git repository">
+    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Javascript now imports the car images into the website">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/HXB 852.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/HXB 852.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +73,7 @@
       <workItem from="1598658278327" duration="2907000" />
       <workItem from="1598668432084" duration="11379000" />
       <workItem from="1598686370632" duration="650000" />
-      <workItem from="1598690408522" duration="3923000" />
+      <workItem from="1598690408522" duration="4724000" />
     </task>
     <task id="LOCAL-00001" summary="Added resource files to git repository">
       <created>1597482241144</created>
@@ -202,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598693348086</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Javascript now imports the car images into the website">
+      <created>1598697091527</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1598697091527</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,12 +244,13 @@
     <MESSAGE value="Testing out adding new locations to the POI.geoJSON file. I have added the railway station" />
     <MESSAGE value="Added some more restaurants and landmarks to the POI.geoJSON file" />
     <MESSAGE value="Added the remaining images to git repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the remaining images to git repository" />
+    <MESSAGE value="Javascript now imports the car images into the website" />
+    <option name="LAST_COMMIT_MESSAGE" value="Javascript now imports the car images into the website" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598693362680">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598697103196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598693362680" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598697103196" />
   </component>
 </project>

@@ -118,6 +118,11 @@ section {
     text-align: left;
 }
 
+.vehicleItem button {
+    margin-left: 50px !important;
+    clear: left;
+}
+
 .vehicleItem ul {
     float: left;
     margin-top: 50px;
