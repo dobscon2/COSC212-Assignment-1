@@ -1,7 +1,7 @@
 var map = (function () {
     "use strict";
     var pub = {};
-    var mapData, map;
+    var mapData, map, landmarks, restaurant, campsite;
 
     pub.setup = function () {
         $.ajax ({
@@ -11,7 +11,6 @@ var map = (function () {
             cache: false,
             success: function(data) {
                 mapData = data;
-                console.log(mapData.features);
 
                 map = L.map('map').setView([-45.910, 170.495], 14);
 
@@ -21,11 +20,40 @@ var map = (function () {
                         '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, '
                 }).addTo(map);
 
-                L.geoJSON(data, {
+                landmarks = L.geoJSON(mapData,  {
+                    filter: function(feature, layer) {
+                        return (feature.properties.type === "landmark");
+                    },
                     onEachFeature: function(feature, layer) {
                         layer.bindPopup('<strong>' + feature.properties.name + '</strong>' + '<br>' + feature.properties.type);
-                }
+                    },
                 }).addTo(map);
+
+                restaurant = L.geoJSON(mapData, {
+                    filter: function(feature, layer) {
+                        return (feature.properties.type === "restaurant");
+                    },
+                    onEachFeature: function(feature, layer) {
+                        layer.bindPopup('<strong>' + feature.properties.name + '</strong>' + '<br>' + feature.properties.type);
+                    },
+                }).addTo(map);
+
+                campsite = L.geoJSON(mapData, {
+                    filter: function(feature, layer) {
+                        return (feature.properties.type === "campsite");
+                    },
+                    onEachFeature: function(feature, layer) {
+                        layer.bindPopup('<strong>' + feature.properties.name + '</strong>' + '<br>' + feature.properties.type);
+                    },
+                }).addTo(map);
+
+                var overlays = {
+                    "Landmarks": landmarks,
+                    "Restaurant": restaurant,
+                    "Campsite": campsite
+                };
+
+                L.control.layers(null, overlays).addTo(map);
 
             },
 

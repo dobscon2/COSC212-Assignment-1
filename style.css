@@ -94,6 +94,10 @@ section {
     text-align: center;
 }
 
+.leaflet-control-layers .leaflet-control-layers-list, .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+    text-align: left !important;
+}
+
 blockquote {
     font-family: Ubuntu-BoldItaltic, sans-serif;
 }
