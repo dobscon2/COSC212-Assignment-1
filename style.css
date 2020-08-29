@@ -97,6 +97,11 @@ section {
     padding-bottom: 10px;
 }
 
+#createBooking button {
+    margin-bottom: 10px;
+    display: inherit;
+}
+
 #map {
     height: 500px;
 }

@@ -7,6 +7,7 @@ var book = (function() {
     var pub = {};
 
     function startBooking() {
+        $("#createBooking").empty();
         $("#createBooking").append("<p>Please choose a car size.</p>");
         $("#createBooking").append("<div class='size'>" +
             "<img src='images/smallCar.jpg' alt='small car'>" +
@@ -53,6 +54,10 @@ var book = (function() {
                     "<hr>");
             }
         });
+
+        $("#createBooking").append("<button type='button'>Go Back</button>");
+
+        $("#createBooking button").click(startBooking);
 
     }
 
