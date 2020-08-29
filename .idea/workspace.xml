@@ -10,7 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Changed id attributes so that the back button is the only button that goes back" />
+    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Updated images" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +69,7 @@
       <workItem from="1598658278327" duration="2907000" />
       <workItem from="1598668432084" duration="11379000" />
       <workItem from="1598686370632" duration="650000" />
-      <workItem from="1598690408522" duration="5027000" />
+      <workItem from="1598690408522" duration="5339000" />
     </task>
     <task id="LOCAL-00001" summary="Added resource files to git repository">
       <created>1597482241144</created>
@@ -218,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598697965596</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Updated images">
+      <created>1598698279702</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1598698279702</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,12 +264,13 @@
     <MESSAGE value="Javascript now imports the car images into the website" />
     <MESSAGE value="Added a &quot;book this car&quot; button" />
     <MESSAGE value="Changed id attributes so that the back button is the only button that goes back" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed id attributes so that the back button is the only button that goes back" />
+    <MESSAGE value="Updated images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated images" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598697975811">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598698290091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598697975811" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598698290091" />
   </component>
 </project>
