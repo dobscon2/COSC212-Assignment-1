@@ -21,46 +21,19 @@ var book = (function() {
             "<figcaption>Luxury Car</figcaption></div>");
 
         $(".size").find("img").each(function() {
-            var imageCall = $(this).attr("src");
-
-            imageCall = imageCall.replace("images/", "");
-            imageCall = imageCall.replace(".jpg", "");
-
-            switch (imageCall) {
-                case "smallCar":
-                    $(this).click(smallCar);
-                    $(this).css('cursor', 'pointer');
-                    break;
-                case "mediumCar":
-                    $(this).click(mediumCar);
-                    $(this).css('cursor', 'pointer');
-                    break;
-                case "largeCar":
-                    $(this).click(largeCar);
-                    $(this).css('cursor', 'pointer');
-                    break;
-                case "luxuryCar":
-                    $(this).click(luxuryCar);
-                    $(this).css('cursor', 'pointer');
-                    break;
-            }
-        })
+            $(this).click(displayChoices);
+            $(this).css('cursor', 'pointer');
+        });
     }
 
-    function smallCar() {
-        console.log("Small cars");
-    }
+    function displayChoices() {
+        var size = $(this).attr("src");
 
-    function mediumCar() {
-        console.log("Medium Cars");
-    }
+        size = size.replace("images/", "");
+        size = size.replace(".jpg", "");
+        size = size.replace("Car", "");
 
-    function largeCar() {
-        console.log("Large Cars");
-    }
-
-    function luxuryCar() {
-        console.log("Luxury Cars");
+        console.log(size);
     }
 
     pub.setup = function() {
