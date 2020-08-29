@@ -97,6 +97,31 @@ section {
     padding-bottom: 10px;
 }
 
+#dates {
+    overflow: hidden;
+}
+
+#dates button {
+    display: inline-block !important;
+    margin-top: 50px;
+}
+
+#dates label {
+    padding-right: 10px;
+}
+
+#pickup {
+    float: left;
+    padding-left: 200px;
+    padding-bottom: 10px;
+}
+
+#dropoff {
+    float: right;
+    padding-right: 200px;
+    padding-bottom: 10px;
+}
+
 #createBooking button {
     margin-bottom: 10px;
     display: inherit;

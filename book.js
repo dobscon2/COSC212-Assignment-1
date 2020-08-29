@@ -23,9 +23,45 @@ var book = (function() {
             "<figcaption>Luxury Car</figcaption></div>");
 
         $(".size").find("img").each(function() {
-            $(this).click(displayChoices);
+            $(this).click(chooseDates);
             $(this).css('cursor', 'pointer');
         });
+    }
+
+    function chooseDates() {
+        var size = $(this).attr("src");
+
+        size = size.replace("images/", "");
+        size = size.replace(".jpg", "");
+        size = size.replace("Car", "");
+
+        size = size.charAt(0).toUpperCase() + size.substring(1, size.length);
+
+        $("#createBooking").empty();
+
+        $("#createBooking").append("<h3>Pickup and Dropoff Dates</h3>");
+        $("#createBooking").append("<p>Please confirm your pickup and dropoff dates</p>");
+
+        $("#createBooking").append("<form id='dates'><div id='pickup'>" +
+            "<label for='pickupDate'>Pickup Date:</label>" +
+            "<input type='date' id='pickupDate' name='pickupDate'>" +
+            "</div>" +
+            "<div id='dropoff'>" +
+            "<label for='dropoffDate'>Dropoff Date:</label>" +
+            "<input type='date' id='dropoffDate' name='dropoffDate'>" +
+            "</div>" +
+            "<button id='confirm' type='button'>Confirm</button>" +
+            "</form>" +
+            "<div id='errormessage'></div>");
+
+        $("#confirm").click(checkDates);
+
+        $("#createBooking").append("<button id='back' type='button'>Go Back</button>");
+        $("#back").click(startBooking);
+    }
+
+    function checkDates() {
+        console.log("beep bop");
     }
 
     function displayChoices() {
