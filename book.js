@@ -55,15 +55,15 @@ var book = (function() {
                     "<li>Vehicle Price per Day: $" + this.pricePerDay + "</li>" +
                     "</ul>" +
                     "<img src='" + imageURL + "' alt='car picture'>" +
-                    "<button type='button'>Book this car</button>" +
+                    "<button id='confirm' type='button'>Book this car</button>" +
                     "</div>" +
                     "<hr>");
             }
         });
 
-        $("#createBooking").append("<button type='button'>Go Back</button>");
+        $("#createBooking").append("<button id='back' type='button'>Go Back</button>");
 
-        $("#createBooking button").click(startBooking);
+        $("#back").click(startBooking);
 
     }
 
