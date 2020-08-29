@@ -2,6 +2,7 @@ var book = (function() {
     "use strict";
 
     var booked;
+    var vehicles;
 
     var pub = {};
 
@@ -33,7 +34,26 @@ var book = (function() {
         size = size.replace(".jpg", "");
         size = size.replace("Car", "");
 
-        console.log(size);
+        size = size.charAt(0).toUpperCase() + size.substring(1, size.length);
+
+        $("#createBooking").empty();
+
+        $("#createBooking").append("<h3>" + size + " Cars</h3>");
+
+        $("#createBooking").append("<hr>");
+
+        $(vehicles.fleet.vehicle).each(function() {
+            if (this.vehicleType === size) {
+                $("#createBooking").append("<div class ='vehicleItem'>" +
+                    "<p>Registration: " + this.registration + "</p>" +
+                    "<p>Vehicle Type: " + this.vehicleType + "</p>" +
+                    "<p>Vehicle Description: " + this.description + "</p>" +
+                    "<p>Vehicle Price per Day: $" + this.pricePerDay + "</p>" +
+                    "</div>" +
+                    "<hr>");
+            }
+        });
+
     }
 
     pub.setup = function() {
@@ -58,7 +78,7 @@ var book = (function() {
             dataType: 'json',
             cache: false,
             success: function(data) {
-                console.log(data);
+                vehicles = data;
             },
 
             error: function() {

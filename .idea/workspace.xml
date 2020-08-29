@@ -10,7 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Added code that puts size choices to users first then added onclick events">
+    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Instead of separate functions for different sizes, I got a smarter method that will get the size of the car from the image click">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/book.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +70,7 @@
       <workItem from="1598491132195" duration="1758000" />
       <workItem from="1598499189827" duration="2906000" />
       <workItem from="1598658278327" duration="2907000" />
-      <workItem from="1598668432084" duration="5667000" />
+      <workItem from="1598668432084" duration="7015000" />
     </task>
     <task id="LOCAL-00001" summary="Added resource files to git repository">
       <created>1597482241144</created>
@@ -155,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598674130724</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Instead of separate functions for different sizes, I got a smarter method that will get the size of the car from the image click">
+      <created>1598674461121</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1598674461121</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,12 +193,13 @@
     <MESSAGE value="I've started working on the javascript for creating a booking" />
     <MESSAGE value="Got popup information working from geoJSON file" />
     <MESSAGE value="Added code that puts size choices to users first then added onclick events" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added code that puts size choices to users first then added onclick events" />
+    <MESSAGE value="Instead of separate functions for different sizes, I got a smarter method that will get the size of the car from the image click" />
+    <option name="LAST_COMMIT_MESSAGE" value="Instead of separate functions for different sizes, I got a smarter method that will get the size of the car from the image click" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598502339087">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598674474858">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598502339087" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598674474858" />
   </component>
 </project>
