@@ -1,3 +1,4 @@
+/*global $*/
 var map = (function () {
     "use strict";
     var pub = {};

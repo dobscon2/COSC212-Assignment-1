@@ -1,3 +1,4 @@
+/*global $*/
 var book = (function() {
     "use strict";
 

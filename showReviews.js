@@ -1,3 +1,4 @@
+/*global $*/
 var showReviews = (function() {
     "use strict";
     var pub = {};
