@@ -128,20 +128,21 @@ var book = (function() {
                 });
 
                 $(vehicles.fleet.vehicle).each(function() {
-                    if (this.vehicleType === size) {
-                        var imageURL = "images/" + this.registration + ".jpg";
-                        console.log(imageURL);
-                        $("#createBooking").append("<div class ='vehicleItem'>" +
-                            "<ul>" +
-                            "<li>Registration: " + this.registration + "</li>" +
-                            "<li>Vehicle Type: " + this.vehicleType + "</li>" +
-                            "<li>Vehicle Description: " + this.description + "</li>" +
-                            "<li>Vehicle Price per Day: $" + this.pricePerDay + "</li>" +
-                            "</ul>" +
-                            "<img src='" + imageURL + "' alt='car picture'>" +
-                            "<button id='confirm' type='button'>Book this car</button>" +
-                            "</div>" +
-                            "<hr>");
+                    if (bookedVehicles.includes(this.registration) === false) {
+                        if (this.vehicleType === size) {
+                            var imageURL = "images/" + this.registration + ".jpg";
+                            $("#createBooking").append("<div class ='vehicleItem'>" +
+                                "<ul>" +
+                                "<li>Registration: " + this.registration + "</li>" +
+                                "<li>Vehicle Type: " + this.vehicleType + "</li>" +
+                                "<li>Vehicle Description: " + this.description + "</li>" +
+                                "<li>Vehicle Price per Day: $" + this.pricePerDay + "</li>" +
+                                "</ul>" +
+                                "<img src='" + imageURL + "' alt='car picture'>" +
+                                "<button id='confirm' type='button'>Book this car</button>" +
+                                "</div>" +
+                                "<hr>");
+                        }
                     }
                 });
 
