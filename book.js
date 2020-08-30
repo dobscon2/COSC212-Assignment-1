@@ -1,7 +1,6 @@
 var book = (function() {
     "use strict";
 
-    var booked;
     var vehicles;
     var size;
     var pickupDate, dropoffDate;
@@ -63,7 +62,6 @@ var book = (function() {
     }
 
     function checkDates() {
-        console.log("beep bop");
         $("#errormessage").empty();
 
         pickupDate = new Date($("#pickupDate").val());
@@ -108,49 +106,65 @@ var book = (function() {
     function displayChoices() {
         $("#createBooking").empty();
 
-        $("#createBooking").append("<h3>" + size + " Cars</h3>");
-
-        $("#createBooking").append("<hr>");
-
-        $(vehicles.fleet.vehicle).each(function() {
-            if (this.vehicleType === size) {
-                var imageURL = "images/" + this.registration + ".jpg";
-                console.log(imageURL);
-                $("#createBooking").append("<div class ='vehicleItem'>" +
-                    "<ul>" +
-                    "<li>Registration: " + this.registration + "</li>" +
-                    "<li>Vehicle Type: " + this.vehicleType + "</li>" +
-                    "<li>Vehicle Description: " + this.description + "</li>" +
-                    "<li>Vehicle Price per Day: $" + this.pricePerDay + "</li>" +
-                    "</ul>" +
-                    "<img src='" + imageURL + "' alt='car picture'>" +
-                    "<button id='confirm' type='button'>Book this car</button>" +
-                    "</div>" +
-                    "<hr>");
-            }
-        });
-
-        $("#createBooking").append("<button id='back' type='button'>Go Back</button>");
-
-        $("#back").click(checkDates);
-
-    }
-
-    pub.setup = function() {
         $.ajax ({
             type: "GET",
             url: "./Resources/bookings.json",
             dataType: 'json',
             cache: false,
             success: function(data) {
-                booked = data;
-                startBooking();
+                var bookedVehicles = [];
+
+                $("#createBooking").append("<h3>" + size + " Cars</h3>");
+
+                $("#createBooking").append("<hr>");
+
+                $(data.bookings.booking).each(function() {
+                    var bookedPickup = new Date(this.pickup.month + "/" + this.pickup.day + "/" + this.pickup.year);
+                    var bookedDropoff = new Date(this.dropoff.month + "/" + this.dropoff.day + "/" + this.dropoff.year);
+
+                    if ((pickupDate <= bookedDropoff) && (bookedPickup <= dropoffDate)) {
+                        bookedVehicles.push(this.registration);
+                    }
+
+                    console.log(bookedVehicles);
+
+                });
+
+                $(vehicles.fleet.vehicle).each(function() {
+                    if (this.vehicleType === size) {
+                        var imageURL = "images/" + this.registration + ".jpg";
+                        console.log(imageURL);
+                        $("#createBooking").append("<div class ='vehicleItem'>" +
+                            "<ul>" +
+                            "<li>Registration: " + this.registration + "</li>" +
+                            "<li>Vehicle Type: " + this.vehicleType + "</li>" +
+                            "<li>Vehicle Description: " + this.description + "</li>" +
+                            "<li>Vehicle Price per Day: $" + this.pricePerDay + "</li>" +
+                            "</ul>" +
+                            "<img src='" + imageURL + "' alt='car picture'>" +
+                            "<button id='confirm' type='button'>Book this car</button>" +
+                            "</div>" +
+                            "<hr>");
+                    }
+                });
+
+                $("#createBooking").append("<button id='back' type='button'>Go Back</button>");
+
+                $("#back").click(chooseDates);
+
             },
 
             error: function() {
                 $("#createBooking").html("Sorry, something has gone wrong on our end.");
             }
         });
+
+
+
+    }
+
+    pub.setup = function() {
+
 
         $.ajax ({
             type: "GET",
@@ -159,6 +173,7 @@ var book = (function() {
             cache: false,
             success: function(data) {
                 vehicles = data;
+                startBooking();
             },
 
             error: function() {
