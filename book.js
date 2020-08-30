@@ -8,6 +8,7 @@ var book = (function() {
     var pub = {};
 
     function startBooking() {
+        size = "";
         $("#createBooking").empty();
         $("#createBooking").append("<p>Please choose a car size.</p>");
         $("#createBooking").append("<div class='size'>" +
@@ -30,13 +31,15 @@ var book = (function() {
     }
 
     function chooseDates() {
-        size = $(this).attr("src");
+        if (size.length === 0) {
+            size = $(this).attr("src");
 
-        size = size.replace("images/", "");
-        size = size.replace(".jpg", "");
-        size = size.replace("Car", "");
+            size = size.replace("images/", "");
+            size = size.replace(".jpg", "");
+            size = size.replace("Car", "");
 
-        size = size.charAt(0).toUpperCase() + size.substring(1, size.length);
+            size = size.charAt(0).toUpperCase() + size.substring(1, size.length);
+        }
 
         $("#createBooking").empty();
 
@@ -133,21 +136,25 @@ var book = (function() {
                             var imageURL = "images/" + this.registration + ".jpg";
                             $("#createBooking").append("<div class ='vehicleItem'>" +
                                 "<ul>" +
-                                "<li>Registration: " + this.registration + "</li>" +
+                                "<li class='registration'>Registration: " + this.registration + "</li>" +
                                 "<li>Vehicle Type: " + this.vehicleType + "</li>" +
                                 "<li>Vehicle Description: " + this.description + "</li>" +
-                                "<li>Vehicle Price per Day: $" + this.pricePerDay + "</li>" +
+                                "<li class='price'>Vehicle Price per Day: $" + this.pricePerDay + "</li>" +
                                 "</ul>" +
                                 "<img src='" + imageURL + "' alt='car picture'>" +
-                                "<button id='confirm' type='button'>Book this car</button>" +
+                                "<button class='confirm' type='button'>Book this car</button>" +
                                 "</div>" +
                                 "<hr>");
                         }
                     }
                 });
+                if ($(".vehicleItem").length >= 1) {
+                    $(".confirm").click(confirmBooking);
+                } else {
+                    $("#createBooking").append("Sorry, no cars are currently available");
+                }
 
                 $("#createBooking").append("<button id='back' type='button'>Go Back</button>");
-
                 $("#back").click(chooseDates);
 
             },
@@ -156,8 +163,38 @@ var book = (function() {
                 $("#createBooking").html("Sorry, something has gone wrong on our end.");
             }
         });
+    }
+
+    function confirmBooking() {
+        var registration_number = $(this).parent().find(".registration").text();
+        var price = $(this).parent().find(".price").text();
 
 
+        registration_number = registration_number.replace("Registration: ", "");
+        price = price.replace("Vehicle Price per Day: $", "");
+        price = parseFloat(price);
+
+
+        var days = Math.round((dropoffDate - pickupDate) / (1000*60*60*24));
+
+        var totalPrice = price * days;
+
+        var item = $(this).parent()[0].outerHTML;
+
+        $(this).remove();
+
+        $("#createBooking").empty();
+
+        $("#createBooking").append("<h3>Confirm Booking</h3><hr>");
+        $("#createBooking").append(item);
+        $(".confirm").remove();
+        $("#createBooking").append("<hr>");
+
+        $("#createBooking").append("<p>You have booked this car from " +
+            pickupDate.getDate() + "/" + pickupDate.getMonth() + "/" + pickupDate.getFullYear() + " till the " +
+            dropoffDate.getDate() + "/" + dropoffDate.getMonth() + "/" + dropoffDate.getFullYear() + "</p>");
+
+        $("#createBooking").append("<p>The total price of your booking is: $" + totalPrice.toFixed(2) + "NZD</p>");
 
     }
 
