@@ -3,6 +3,7 @@ var map = (function () {
     var pub = {};
     var mapData, map, landmarks, restaurant, campsite;
 
+    /* Setup function is the main function of the script, it reads the data from the POI.geoJSON and draws a map */
     pub.setup = function () {
         $.ajax ({
             type: "GET",

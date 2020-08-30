@@ -10,10 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Working on confirmBooking() function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9dbe957b-8333-42a4-beca-4a34661b4251" name="Default Changelist" comment="Code is finished">
       <change beforePath="$PROJECT_DIR$/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookings.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/showReviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/showReviews.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,7 @@
       <workItem from="1598690408522" duration="5339000" />
       <workItem from="1598698501534" duration="2566000" />
       <workItem from="1598763799102" duration="5948000" />
-      <workItem from="1598775350603" duration="8075000" />
+      <workItem from="1598775350603" duration="8742000" />
     </task>
     <task id="LOCAL-00001" summary="Added resource files to git repository">
       <created>1597482241144</created>
@@ -268,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598781279738</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Code is finished">
+      <created>1598783958078</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1598783958078</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +295,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created some html pages as the basic template for the website" />
     <MESSAGE value="Added a new font for logo and added some css to style the website" />
     <MESSAGE value="Added some Javascript to read the reviews.json file and display it on the webpage" />
     <MESSAGE value="Updating resource json files" />
@@ -312,12 +319,13 @@
     <MESSAGE value="Added code that checks for overlapping dates" />
     <MESSAGE value="Fixed bug, typo with json object name to get booked cars number" />
     <MESSAGE value="Working on confirmBooking() function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on confirmBooking() function" />
+    <MESSAGE value="Code is finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code is finished" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598781291894">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1598783968060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598781291894" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598783968060" />
   </component>
 </project>

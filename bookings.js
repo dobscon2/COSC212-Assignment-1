@@ -3,6 +3,7 @@ var bookings = (function() {
 
     var pub = {};
 
+    /* This function displays the contents of bookings.json in a table for admins to view easily */
     function displayBookings(data) {
         var table = $("#bookings")[0];
         var bookings = data.bookings.booking;
@@ -34,6 +35,7 @@ var bookings = (function() {
 
     }
 
+    /* Setup function reads the data from bookings.json */
     pub.setup = function() {
         $.ajax ({
             type: "GET",

@@ -10,6 +10,7 @@ var book = (function() {
 
     var pub = {};
 
+    /* This function starts the booking process by displaying the sizes of the cars to the user. */
     function startBooking() {
         size = "";
         $("#createBooking").empty();
@@ -33,6 +34,7 @@ var book = (function() {
         });
     }
 
+    /* This function allows the user to choose the dates they want to book */
     function chooseDates() {
         if (size.length === 0) {
             size = $(this).attr("src");
@@ -67,6 +69,7 @@ var book = (function() {
         $("#back").click(startBooking);
     }
 
+    /* This function checks if the dates are valid */
     function checkDates() {
         $("#errormessage").empty();
 
@@ -109,6 +112,9 @@ var book = (function() {
         }
     }
 
+    /* This function displays the vehicles the user can choose, it will check against the booking.json file to see if any vehicle is booked
+    at the dates that user requested.
+     */
     function displayChoices() {
         $("#createBooking").empty();
 
@@ -168,6 +174,8 @@ var book = (function() {
         });
     }
 
+    /* This function is the final confirmation confirming the booking with the user */
+
     function confirmBooking() {
         registration_number = $(this).parent().find(".registration").text();
         var price = $(this).parent().find(".price").text();
@@ -217,6 +225,7 @@ var book = (function() {
 
     }
 
+    /* This function checks if the details provided are valid */
     function checkDetails() {
         name = $("#name").val();
         phone = $("#phone").val();
@@ -244,6 +253,7 @@ var book = (function() {
         }
     }
 
+    /* This function confirms the booking and sends the booking off making it final */
     function bookCar() {
         var booking = {number: registration_number, name: name, pickup: pickupDate, dropoff: dropoffDate};
         var output = JSON.stringify(booking);
@@ -255,9 +265,8 @@ var book = (function() {
         $("#createBooking").append("<p>Thanks for booking with us</p>");
     }
 
+    /* Setup function gets the data from vehicles.json ready for the webiste to use */
     pub.setup = function() {
-
-
         $.ajax ({
             type: "GET",
             url: "./Resources/vehicles.json",

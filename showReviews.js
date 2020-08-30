@@ -5,6 +5,7 @@ var showReviews = (function() {
     var customerReviews;
     var index;
 
+    /* This function shuffles through the reviews and displays them on the home page */
     function displayReview() {
         $("#reviews").empty();
 
@@ -18,6 +19,7 @@ var showReviews = (function() {
         }
     }
 
+    /* Setup function reads the data from reviews.json */
     pub.setup = function() {
         $.ajax ({
             type: "GET",
