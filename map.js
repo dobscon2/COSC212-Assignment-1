@@ -13,7 +13,7 @@ var map = (function () {
             success: function(data) {
                 mapData = data;
 
-                map = L.map('map').setView([-45.910, 170.495], 14);
+                map = L.map('map').setView([-45.910, 170.495], 12);
 
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     maxZoom: 18,
