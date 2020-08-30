@@ -4,6 +4,9 @@ var book = (function() {
     var vehicles;
     var size;
     var pickupDate, dropoffDate;
+    var registration_number;
+    var name;
+    var phone;
 
     var pub = {};
 
@@ -166,7 +169,7 @@ var book = (function() {
     }
 
     function confirmBooking() {
-        var registration_number = $(this).parent().find(".registration").text();
+        registration_number = $(this).parent().find(".registration").text();
         var price = $(this).parent().find(".price").text();
 
 
@@ -196,6 +199,60 @@ var book = (function() {
 
         $("#createBooking").append("<p>The total price of your booking is: $" + totalPrice.toFixed(2) + "NZD</p>");
 
+        $("#createBooking").append("<p>Please provide your details below</p>" +
+            "<form id='contact'>" +
+            "<label for='name'>Name:</label>" +
+            "<input type='text' id='name' name='name'>" +
+            "<label for='phone'>Phone:</label>" +
+            "<input type='text' id='phone' name='phone'>" +
+            "</form>");
+
+        $("#createBooking").append("<div id='errormessage'></div>");
+
+        $("#createBooking").append("<button id='back' type='button'>Go Back</button>");
+        $("#back").click(displayChoices);
+
+        $("#createBooking").append("<button id='complete' type='button'>Complete Booking</button>");
+        $("#complete").click(checkDetails);
+
+    }
+
+    function checkDetails() {
+        name = $("#name").val();
+        phone = $("#phone").val();
+        var valid = true;
+
+        $("#errormessage").empty();
+
+        if (name < 1) {
+            $("#errormessage").append("<p>Please provide a name</p>");
+            valid = false;
+        }
+
+        if (phone < 1) {
+            $("#errormessage").append("<p>Please provide a phone number</p>");
+            valid = false;
+        }
+
+        if (isNaN(phone) === true) {
+            $("#errormessage").append("<p>Please don't provide letters in your phone number");
+            valid = false;
+        }
+
+        if (valid === true) {
+            bookCar();
+        }
+    }
+
+    function bookCar() {
+        var booking = {number: registration_number, name: name, pickup: pickupDate, dropoff: dropoffDate};
+        var output = JSON.stringify(booking);
+        window.sessionStorage.setItem("booking", output);
+
+        $("#createBooking").empty();
+
+        $("#createBooking").append("<h3>Booking Successful</h3>");
+        $("#createBooking").append("<p>Thanks for booking with us</p>");
     }
 
     pub.setup = function() {
