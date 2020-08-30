@@ -123,11 +123,8 @@ var book = (function() {
                     var bookedDropoff = new Date(this.dropoff.month + "/" + this.dropoff.day + "/" + this.dropoff.year);
 
                     if ((pickupDate <= bookedDropoff) && (bookedPickup <= dropoffDate)) {
-                        bookedVehicles.push(this.registration);
+                        bookedVehicles.push(this.number);
                     }
-
-                    console.log(bookedVehicles);
-
                 });
 
                 $(vehicles.fleet.vehicle).each(function() {
