@@ -3,6 +3,8 @@ var book = (function() {
 
     var booked;
     var vehicles;
+    var size;
+    var pickupDate, dropoffDate;
 
     var pub = {};
 
@@ -29,7 +31,7 @@ var book = (function() {
     }
 
     function chooseDates() {
-        var size = $(this).attr("src");
+        size = $(this).attr("src");
 
         size = size.replace("images/", "");
         size = size.replace(".jpg", "");
@@ -62,17 +64,48 @@ var book = (function() {
 
     function checkDates() {
         console.log("beep bop");
+        $("#errormessage").empty();
+
+        pickupDate = new Date($("#pickupDate").val());
+        dropoffDate = new Date($("#dropoffDate").val());
+        var todayDate = new Date();
+        var valid = true;
+
+        if (pickupDate.toString() === "Invalid Date") {
+            $("#errormessage").append("<p>Please input a pickup date</p>");
+            valid = false;
+        }
+
+        if (dropoffDate.toString() === "Invalid Date") {
+            $("#errormessage").append("<p>Please input a dropoff date</p>");
+            valid = false;
+        }
+        if (pickupDate < todayDate && pickupDate.setHours(0 , 0, 0, 0) != todayDate.setHours(0, 0, 0, 0)) {
+            $("#errormessage").append("<p>Your pickup date can't be in the past</p>");
+            valid = false;
+        }
+
+        if (pickupDate.setHours(0, 0, 0, 0) === todayDate.setHours(0, 0, 0, 0)) {
+            $("#errormessage").append("<p>Your pickup date can't be today");
+            valid = false;
+        }
+
+        if (dropoffDate < pickupDate) {
+            $("#errormessage").append("<p>Your dropoff date can't be before your pickup date");
+            valid = false;
+        }
+
+        if (dropoffDate.setHours(0, 0, 0, 0) === todayDate.setHours(0, 0, 0, 0)) {
+            $("#errormessage").append("<p>Your dropoff date can't be today");
+            valid = false;
+        }
+
+        if (valid === true) {
+            displayChoices();
+        }
     }
 
     function displayChoices() {
-        var size = $(this).attr("src");
-
-        size = size.replace("images/", "");
-        size = size.replace(".jpg", "");
-        size = size.replace("Car", "");
-
-        size = size.charAt(0).toUpperCase() + size.substring(1, size.length);
-
         $("#createBooking").empty();
 
         $("#createBooking").append("<h3>" + size + " Cars</h3>");
@@ -99,7 +132,7 @@ var book = (function() {
 
         $("#createBooking").append("<button id='back' type='button'>Go Back</button>");
 
-        $("#back").click(startBooking);
+        $("#back").click(checkDates);
 
     }
 
